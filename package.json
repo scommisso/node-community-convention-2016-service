@@ -7,6 +7,10 @@
     "test": "test",
     "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scommisso/node-community-convention-2016-service.git"
+  },
   "keywords": [
     "node community convention",
     "ncc",
