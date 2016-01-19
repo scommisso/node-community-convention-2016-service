@@ -1,0 +1,17 @@
+{
+  "cors": {
+    "whitelist": ["localhost"]
+  },
+  "busyMaxLag": 100,
+  "timeout": [
+    {
+      "method": "get",
+      "path": "/hello*",
+      "timeout": "5s"
+    }, {
+      "method": "get",
+      "path": "/widget*",
+      "timeout": "60s"
+    }
+  ]
+}

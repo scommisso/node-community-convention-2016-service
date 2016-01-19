@@ -1,0 +1,10 @@
+{
+  "db-user-name": {
+    "alg": "aes-256-ctr",
+    "value": "4e30017e4e68423021f8ac4e1cab7942ae87"
+  },
+  "db-password": {
+    "alg": "aes-256-ctr",
+    "value": "4e30017e4e68423024eaba4f46aa6a4be9"
+  }
+}
