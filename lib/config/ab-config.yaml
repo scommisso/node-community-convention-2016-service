@@ -1,0 +1,15 @@
+---
+someStaticConfig: # comments up here, and description below
+  description: >
+    This is some config key that remains static
+  value: This is static
+
+someDynamicConfig:
+  description: >
+    This is some config key that has multiple values
+    that change based on the user id context.
+  values:
+    - value: true
+      percent: 15
+    - value: false
+      percent: 85

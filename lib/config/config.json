@@ -2,7 +2,7 @@
   "cors": {
     "whitelist": ["localhost"]
   },
-  "busyMaxLag": 100,
+  "busyMaxLag": 20,
   "timeout": [
     {
       "method": "get",
@@ -13,5 +13,6 @@
       "path": "/widget*",
       "timeout": "60s"
     }
-  ]
+  ],
+  "staticJsonConfig": "static json value"
 }
