@@ -1,7 +1,10 @@
 node-community-convention-service
 =================================
 
-This project is a demonstration of the following modules:
+An associated slide deck is available
+[here](http://prezi.com/i2td-9dox_or/?utm_campaign=share&utm_medium=copy). 
+
+This project is a demonstration of the following modules: 
 
 [swagger-node-express](https://www.npmjs.com/package/swagger-node-express)
 --------------------------------------------------------------------------
@@ -10,7 +13,9 @@ This project is a demonstration of the following modules:
 implementation of the specification for Node using Express. Routes are
 declaratively defined in JSON files (or YAML if using Swagger 2.x), which are
 used to provide both the validation logic as well as a test harness. It is a 
-lightweight alternative to something like hapi.js.
+lightweight alternative to something like hapi.js or koa. The documentation
+can also be used to generate Swagger clients in a variety of platforms
+(JS, C#, Java). 
 
 [swagger-node-express](https://www.npmjs.com/package/swagger-node-express)
 generates a UI to work with a Swagger API, as well as provides an
