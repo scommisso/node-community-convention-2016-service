@@ -1,4 +1,4 @@
-node-community-convention-service
+node-community-convention-2016-service
 =================================
 
 An associated slide deck is available
