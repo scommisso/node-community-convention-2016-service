@@ -1,12 +1,20 @@
 {
   "name": "node-community-convention-service",
   "version": "0.0.1",
-  "description": "A REST service that demonstrates cluster-service, nconf, flipr and swagger",
+  "description": "A REST service that demonstrates cluster-service, nconf, flipr, winston and swagger",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "start": "node index.js",
-    "cluster": "./node_modules/cluster-service/bin/cservice ./index.js --accessKey=password --workerCount=2 --port=3131"
+    "cluster": "./node_modules/cluster-service/bin/cservice ./index.js --accessKey=password --workerCount=2 --port=3131",
+    "test": "npm run jscs && npm run jshint && npm run unit-cov",
+    "unit": "./node_modules/mocha/bin/_mocha ./test",
+    "unit-cov": "./node_modules/.bin/istanbul cover --dir coverage-unit ./node_modules/mocha/bin/_mocha",
+    "jscs": "npm run jscs-src && npm run jscs-test",
+    "jscs-src": "jscs index.js lib/",
+    "jscs-test": "jscs test/",
+    "jshint": "npm run jshint-src && npm run jshint-test",
+    "jshint-src": "jshint index.js lib/",
+    "jshint-test": "jshint test/"
   },
   "repository": {
     "type": "git",
@@ -41,5 +49,16 @@
     "swagger-validation": "^1.4.2",
     "toobusy-js": "^0.4.2",
     "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "istanbul": "~0.2.11",
+    "jscs": "~1.8.0",
+    "jshint": "~2.5.10",
+    "mocha": "~1.21.4",
+    "mocha-istanbul": "~0.2.0",
+    "sinon": "~1.10.2",
+    "sinon-chai": "~2.5.0",
+    "spec-xunit-file": "0.0.1-3"
   }
 }

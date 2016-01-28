@@ -14,5 +14,20 @@
       "timeout": "60s"
     }
   ],
+  "logger": {
+    "transports": [{
+      "transport": "Console",
+      "options": {
+        "level": "info"
+      }
+    },
+    {
+      "transport": "File",
+      "options": {
+        "level": "warn",
+        "filename": "winston.log"
+      }
+    }]
+  },
   "staticJsonConfig": "static json value"
 }
